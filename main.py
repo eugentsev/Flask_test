@@ -6,11 +6,6 @@ from utils import generate_password as gp, open_file_req as file_req, username_g
 app = Flask(__name__)
 
 
-@app.route('/')
-def hello_world():
-    return 'Hello, World!'
-
-
 @app.route('/generate-password/')
 def generate_password():
 
